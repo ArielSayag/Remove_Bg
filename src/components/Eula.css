@@ -1,0 +1,9 @@
+.eula_div{
+  position: absolute;
+  background-color: white;
+  color: black;
+  width: 743px;
+  top: 258px;
+  padding: 20px;
+  text-align: right;
+}

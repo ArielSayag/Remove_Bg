@@ -1,3 +1,11 @@
+@font-face {
+  font-family: Aduma;
+  src: url(./fonts/Aduma\ Regular.ttf);
+}
+
+body{
+  font-family: 'Aduma';
+}
 .App {
   text-align: center;
 }
