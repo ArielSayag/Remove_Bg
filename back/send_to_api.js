@@ -10,9 +10,7 @@ module.exports = async function send_to_api(image_path , fileName, color) {
     formData.append('size', 'auto');
     formData.append('image_file', fs.createReadStream(inputPath), path.basename(inputPath));
     
-    // formData.append('bg_color', color);
-    
-    
+    formData.append('bg_color', color);
     
     await axios({
     method: 'post',

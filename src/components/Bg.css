@@ -226,3 +226,86 @@
 .input_file{
   display: none;
 } 
+
+
+
+
+.download_image_popup{
+  background-color: white;
+  border: 1px solid black;
+  width: 50%;
+  margin: 0 auto;
+  top: -433px;
+  position: relative;
+  height: 212px;
+  border-radius: 5px;
+  padding:18px;
+  text-align: center;
+}
+
+
+
+.top_image{
+  width: 50px;
+  height: 50px;
+  position: relative;
+  margin: 0 auto;
+  top: -29px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px #9c27b08c;
+}
+
+
+
+.top_image img {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.download_image_popup_text{
+  font-size: 38px;
+  color: #3F51B5;
+}
+
+
+.download_image_popup_subtext, .download_image_popup_btn_cont{
+  direction:rtl;
+}
+
+
+.cancel, .aprove{
+  width: 94px;
+  height: 30px;
+  border-radius: 25px;
+  border: none;
+  border: 1px solid black;
+  background-color: transparent;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+
+.aprove{
+  background-color: #3f51b5;
+  color:white;
+}
+
+.overlay{
+  background-color: #161B21;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.7;
+}
+
+
+.closeImg{
+  position: absolute;
+  left: 10px;
+  top: 11px;
+  cursor: pointer;
+}

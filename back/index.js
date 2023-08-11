@@ -30,16 +30,14 @@ app.post('/upload_file' , (req , res) => {
   
   // app.use(fileupload({useTempFiles:true}))
     file.mv(`${newpath}${filename}`, (err) => {
-    try{
-      (async () => {
-        await send_to_api(`${newpath}${filename}`,filename, req.body.color_to_api );
-        res.status(200).send({ imageName: filename, code: 200 });
-      })();
-    } catch(err){
-        res.status(500).send({ message: "File upload failed", code: 200 });
-    }
-
-    
+      try{
+        (async () => {
+          await send_to_api(`${newpath}${filename}`,filename, req.body.color_to_api );
+          res.status(200).send({ imageName: filename, code: 200 });
+        })();
+      } catch(err){
+          res.status(500).send({ message: "File upload failed", code: 200 });
+      }
     });
 })
 
