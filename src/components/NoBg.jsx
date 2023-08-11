@@ -1,7 +1,7 @@
 import React , {useState , useRef} from 'react';
 import "./NoBg.css";
 
-function NoBg() {
+function NoBg(props) {
 
   const inputElement=useRef();
   const [color,setColor]=useState("#000");
@@ -23,7 +23,13 @@ function NoBg() {
         <span className='display_color' style={{backgroundColor:color}}></span>
       </div>
       <input ref={inputElement} onChange={change_color} className='input_color' type='color' />
-    </div>
+
+      {props.image_name ?  
+        <div className='image_no_bg_div'>
+          <img className="image_no_bg" src={"http://localhost:5000/no_bg_"+props.image_name} alt="no_bg_image"/>
+        </div> 
+      : "" }
+    </div> 
   )
 }
 

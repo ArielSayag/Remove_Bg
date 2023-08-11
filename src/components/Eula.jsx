@@ -1,8 +1,17 @@
 import React from 'react';
 import "./Eula.css";
-function Eula() {
+import close from "../assets/close1.png"
+
+
+function Eula(props) {
+
+  const close_popup=()=>{
+    props.closePopup(false)
+  }
+
   return (
     <div className='eula_div'>
+      <img src={close} alt="close" className='close' onClick={close_popup}/>
     לורם איפסום דולור סיט אמט, קונסקטורר אדיפיסינג אלית הועניב היושבב שערש שמחויט - שלושע ותלברו חשלו שעותלשך וחאית נובש ערששף. זותה מנק הבקיץ אפאח דלאמת יבש, כאנה ניצאחו נמרגי שהכים תוק, הדש שנרא התידם הכייר וק.
 
     סחטיר בלובק. תצטנפל בלינדו למרקל אס לכימפו, דול, צוט ומעיוט - לפתיעם ברשג - ולתיעם גדדיש. קוויז דומור ליאמום בלינך רוגצה. לפמעט מוסן מנת. קונדימנטום קורוס בליקרה, נונסטי קלובר בריקנה סטום, לפריקך תצטריק לרטי.

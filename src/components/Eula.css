@@ -7,3 +7,9 @@
   padding: 20px;
   text-align: right;
 }
+
+.close{
+  position: relative;
+  top: -15px;
+  left: -18px;
+}

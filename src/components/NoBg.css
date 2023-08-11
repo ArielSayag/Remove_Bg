@@ -47,3 +47,15 @@
   z-index: -1;
   opacity: 0;  
 }
+
+.image_no_bg{
+  width: 98%;
+  border: 1px solid;
+  top: 37px;
+  margin: 0 auto;
+}
+
+.image_no_bg_div{
+  overflow: auto;
+  height: 85%;
+}
